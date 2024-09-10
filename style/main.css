@@ -405,7 +405,7 @@ html[dir=ltr] .submenu-dropdown-li > .sub-arrow-rotate::after {
   opacity: 0;
   visibility: hidden;
   transition: all linear 0.2s;
-  transform: translate(-50%, 10px);
+  transform: translateX(-50%);
 }
 .general-details::after {
   content: "";
@@ -458,7 +458,7 @@ html[dir=ltr] .submenu-dropdown-li > .sub-arrow-rotate::after {
 .account,
 .language {
   position: relative;
-  padding: 10px 0;
+  padding: 12px 0;
   position: relative;
   display: flex;
   align-items: center;
@@ -468,7 +468,6 @@ html[dir=ltr] .submenu-dropdown-li > .sub-arrow-rotate::after {
 .language:hover .general-details {
   opacity: 1;
   visibility: visible;
-  transform: translate(-50%, 0);
 }
 
 .language .img-text,
@@ -882,7 +881,7 @@ html[dir=ltr] .submenu-dropdown-li > .sub-arrow-rotate::after {
 @media only screen and (max-width: 767px) {
   .text-content .title {
     font-size: 25px;
-    margin-bottom: 17px;
+    margin-bottom: 15px;
   }
   .text-content .text {
     font-size: 22px;

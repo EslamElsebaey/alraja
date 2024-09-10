@@ -244,12 +244,12 @@ html[dir="ltr"]{
   z-index: 999;
   left: 50%;
   // transform: matrix(1, 0, 0, 1, 0, 0);
-  top: 100%;
+  top: 100% ;
   min-width: 140px;
   opacity: 0;
   visibility: hidden;
   transition: all linear 0.2s;
-  transform: translate(-50%, 10px);
+  transform: translateX(-50%);
   &::after {
     content: "";
     position: absolute;
@@ -304,7 +304,7 @@ html[dir="ltr"]{
 .account,
 .language {
   position: relative;
-  padding: 10px 0;
+  padding: 12px 0;
   position: relative;
   display: flex;
   align-items: center;
@@ -313,7 +313,6 @@ html[dir="ltr"]{
     .general-details {
       opacity: 1;
       visibility: visible;
-      transform: translate(-50%, 0);
     }
   }
 }
