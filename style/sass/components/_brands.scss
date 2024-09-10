@@ -1,0 +1,29 @@
+.brands {
+  padding-bottom: 90px;
+  .swiper-pagination{
+    display: flex;
+    justify-content: center;
+    bottom: -10px;
+  }
+}
+
+.brand-item {
+  a {
+    width: 100%;
+    @extend %flex-center;
+    img {
+      max-width: 100%;
+      object-fit: contain;
+    }
+  }
+}
+
+
+@include max-992 {
+  .brands .swiper-pagination{
+    bottom: -20px;
+  }
+  .brands{
+    padding-bottom: 60px;
+  }
+}

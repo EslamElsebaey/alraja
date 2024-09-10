@@ -1,0 +1,125 @@
+.footer {
+  padding-top: 80px;
+}
+.upper-footer {
+  padding-bottom: 60px;
+}
+.footer-items {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  .footer-item-title {
+    margin: 0;
+    margin-bottom: 20px;
+    font-size: 17px;
+    color: #000;
+    font-weight: 600;
+  }
+}
+.footer-ul {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 10px;
+  li {
+    .footer-anchor {
+      color: #757575;
+      font-weight: 500;
+      text-transform: capitalize;
+      transition: color 0.2s linear;
+      font-size: 14px;
+      &:hover {
+        color: $main-color;
+      }
+    }
+  }
+}
+.copyright {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+.bottom-footer {
+  background: #f5f5f5;
+  padding: 16px 0;
+}
+.bottom-footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.copyright-text,
+.tasawk-text {
+  font-size: 13px;
+  font-weight: 500;
+  color: #757575;
+  margin: 0;
+}
+.tasawk-text {
+  display: flex;
+  gap: 6px;
+  &::before{
+    content: "-";
+  }
+}
+.tasawk-link {
+  display: flex;
+}
+
+@include max-992 {
+  .bottom-footer-content {
+    flex-direction: column-reverse;
+    gap: 15px;
+  }
+  .footer-item {
+    width: 100%;
+  }
+  .footer-items{
+    gap: 0;
+  }
+  .footer-items .footer-item-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &::after {
+      content: "\f078";
+      font-family: "Font Awesome 6 Pro";
+      font-size: 14px;
+      transition: transform linear 0.2s;
+    }
+  }
+  .footer-ul-wrapper {
+    display: none;
+    padding-bottom: 25px;
+  }
+  .rotate-arrow {
+    &::after {
+      transform: rotate(180deg);
+    }
+  }
+  .footer-img-item {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    img {
+      width: 150px;
+    }
+  }
+   .footer {
+    padding-top: 50px;
+  }
+  .copyright{
+    flex-direction: column;
+    gap: 8px;
+  }
+  .tasawk-text::before{
+    display: none;
+  }
+  .upper-footer{
+    padding-bottom: 35px;
+  }
+}
+
