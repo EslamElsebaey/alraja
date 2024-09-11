@@ -336,6 +336,7 @@ html[dir=ltr] .submenu-dropdown-li > .sub-arrow-rotate::after {
   transform: translateY(-50%);
   transition: all linear 0.3s;
   background-color: #000;
+  z-index: 100;
 }
 .search .close-searh-btn {
   position: absolute;
