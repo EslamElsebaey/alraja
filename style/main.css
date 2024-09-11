@@ -733,6 +733,7 @@ html[dir=ltr] .submenu-dropdown-li > .sub-arrow-rotate::after {
 }
 .mainBanner-link img {
   width: 100%;
+  height: 600px;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -744,6 +745,9 @@ html[dir=ltr] .submenu-dropdown-li > .sub-arrow-rotate::after {
   .mainBanner .swiper-pagination {
     display: flex;
   }
+  .mainBanner-link img {
+    height: auto;
+  }
 }
 @media only screen and (max-width: 767px) {
   .mainBanner .swiper-pagination {
@@ -752,6 +756,7 @@ html[dir=ltr] .submenu-dropdown-li > .sub-arrow-rotate::after {
 }
 .brands {
   padding-bottom: 90px;
+  padding-top: 50px;
 }
 .brands .swiper-pagination {
   display: flex;
@@ -774,6 +779,7 @@ html[dir=ltr] .submenu-dropdown-li > .sub-arrow-rotate::after {
   }
   .brands {
     padding-bottom: 60px;
+    padding-top: 40px;
   }
 }
 .newsletter {
