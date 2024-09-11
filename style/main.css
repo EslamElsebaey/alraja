@@ -57,6 +57,10 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  padding-top: 117.8px;
+}
+
 .newsletter-form .submit-btn, .brand-item a, .mainBanner .swiper-button-next .inner-circle,
 .mainBanner .swiper-button-prev .inner-circle, .mainBanner .swiper-button-next,
 .mainBanner .swiper-button-prev, .search {
@@ -143,6 +147,11 @@ button:focus {
     left: 100%;
   }
 }
+@media only screen and (max-width: 1199px) {
+  body {
+    padding-top: 93.63px;
+  }
+}
 @media only screen and (max-width: 991px) {
   .swiper-pagination-bullet {
     background-color: #000;
@@ -158,10 +167,14 @@ button:focus {
     padding-right: 20px;
     padding-left: 20px;
   }
+  body {
+    padding-top: 79.13px;
+  }
 }
 .header {
-  position: relative;
+  position: fixed;
   padding: 15px 0px;
+  border-bottom: 1px solid transparent;
   background-color: #ffffff;
   transition: all linear 0.3s;
   top: 0;
@@ -171,6 +184,7 @@ button:focus {
 }
 
 .sticky-header {
+  padding: 10px 0;
   border-color: #e6e6e6;
 }
 .sticky-header .logo img {
@@ -527,6 +541,9 @@ html[dir=ltr] .submenu-dropdown-li > .sub-arrow-rotate::after {
   .control-section {
     gap: 20px;
   }
+  .sticky-header .logo img {
+    width: 120px;
+  }
 }
 @media only screen and (min-width: 768px) {
   .close-language-wrapper,
@@ -647,6 +664,12 @@ html[dir=ltr] .submenu-dropdown-li > .sub-arrow-rotate::after {
   }
   .general-details {
     min-width: 130px;
+  }
+  .sticky-header {
+    padding: 15px 0;
+  }
+  .sticky-header .logo img {
+    width: 100px;
   }
 }
 .mainBanner .swiper-button-prev, .mainBanner .swiper-rtl .swiper-button-next {
@@ -852,6 +875,12 @@ html[dir=ltr] .submenu-dropdown-li > .sub-arrow-rotate::after {
 .newsletter-input:focus {
   outline: none;
 }
+.newsletter-input::-moz-placeholder {
+  font-size: 13px;
+}
+.newsletter-input::placeholder {
+  font-size: 13px;
+}
 
 @media only screen and (max-width: 1199px) {
   .newsletter-content {
@@ -868,23 +897,27 @@ html[dir=ltr] .submenu-dropdown-li > .sub-arrow-rotate::after {
     max-width: 100%;
   }
   .newsletter-form {
-    gap: 15px;
+    gap: 10px;
   }
   .newsletter-content {
     flex-direction: column;
   }
   .newsletter-form {
-    flex-direction: column;
     align-items: center;
   }
 }
 @media only screen and (max-width: 767px) {
+  .newsletter-form .submit-btn {
+    height: 44px;
+    min-width: 120px;
+    font-size: 15px;
+  }
   .text-content .title {
-    font-size: 25px;
+    font-size: 20px;
     margin-bottom: 15px;
   }
   .text-content .text {
-    font-size: 22px;
+    font-size: 18px;
   }
   .newsletter {
     padding: 60px 0;
@@ -895,9 +928,13 @@ html[dir=ltr] .submenu-dropdown-li > .sub-arrow-rotate::after {
   }
   .newsletter-input {
     width: 100%;
+    padding-inline-start: 40px;
   }
   .newsletter-content {
     row-gap: 25px;
+  }
+  .newsletter-form .input-wrapper .icon {
+    inset-inline-start: 15px;
   }
 }
 .footer {

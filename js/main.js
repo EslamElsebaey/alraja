@@ -20,7 +20,7 @@ $(document).ready(function () {
     breakpoints: {
       320: {
         slidesPerView: 1,
-        spaceBetween: 0,
+        spaceBetween: 10,
       },
     },
   });
@@ -122,13 +122,13 @@ $(document).ready(function () {
 
   // Fixed Nav
 
-  // $(window).on("scroll", function () {
-  //   if ($(window).scrollTop() > 40) {
-  //     $("header").addClass("sticky-header");
-  //   } else {
-  //     $("header").removeClass("sticky-header");
-  //   }
-  // });
+  $(window).on("scroll", function () {
+    if ($(window).scrollTop() > 40) {
+      $("header").addClass("sticky-header");
+    } else {
+      $("header").removeClass("sticky-header");
+    }
+  });
 
   //**********************************************************************************************
 

@@ -9,9 +9,9 @@ body {
 html {
   scroll-behavior: smooth;
 }
-// body {
-//   padding-top: 117.8px;
-// }
+body {
+  padding-top: 117.8px;
+}
 
 
 
@@ -152,6 +152,12 @@ button {
 //   transform: translateY(0);
 // }
 
+@include max-1200{
+  body{
+    padding-top: 93.63px;
+  }
+}
+
 
 @include max-992 {
   .swiper-pagination-bullet{
@@ -170,9 +176,9 @@ button {
     padding-right: 20px;
     padding-left: 20px;
   }
-  // body {
-  //   padding-top: 68.8px;
-  // }
+  body {
+    padding-top: 79.13px;
+  }
 
 
   // .toTop {

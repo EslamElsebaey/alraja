@@ -96,6 +96,9 @@
   &:focus{
     outline: none;
   }
+  &::placeholder{
+    font-size: 13px;
+  }
 }
 
 
@@ -117,24 +120,29 @@
     max-width: 100%;
   }
   .newsletter-form{
-    gap: 15px;
+    gap: 10px;
   }
   .newsletter-content{
     flex-direction: column;
   }
   .newsletter-form{
-    flex-direction: column;
+    // flex-direction: column;
     align-items: center;
   }
 }
 
 @include max-768 {
+  .newsletter-form .submit-btn{
+    height: 44px;
+    min-width: 120px;
+    font-size: 15px;
+  }
   .text-content .title{
-    font-size: 25px;
+    font-size: 20px;
     margin-bottom: 15px;
   }
   .text-content .text{
-    font-size: 22px;
+    font-size: 18px;
   }
   .newsletter{
     padding: 60px 0 ;
@@ -145,8 +153,12 @@
   }
   .newsletter-input {
     width: 100%;
+    padding-inline-start: 40px;
   }
   .newsletter-content{
     row-gap: 25px;
+  }
+  .newsletter-form .input-wrapper .icon{
+    inset-inline-start: 15px;
   }
 }

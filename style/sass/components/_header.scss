@@ -1,7 +1,7 @@
 .header {
-  position: relative;
+  position: fixed;
   padding: 15px 0px;
-  // border-bottom: 1px solid transparent;
+  border-bottom: 1px solid transparent;
   background-color: #ffffff;
   transition: all linear 0.3s;
   top: 0;
@@ -9,7 +9,10 @@
   width: 100%;
   z-index: 30;
 }
+
+
 .sticky-header {
+  padding: 10px 0;
   border-color: #e6e6e6;
   .logo img {
     width: 140px;
@@ -386,6 +389,9 @@ html[dir="ltr"]{
   .control-section {
     gap: 20px;
   }
+  .sticky-header .logo img{
+    width: 120px;
+  }
 }
 
 @include min-768 {
@@ -511,5 +517,11 @@ html[dir="ltr"]{
   }
   .general-details{
     min-width: 130px;
+  }
+  .sticky-header{
+    padding: 15px 0;
+    .logo img{
+      width: 100px;
+    }
   }
 }
